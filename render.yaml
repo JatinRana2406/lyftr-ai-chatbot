@@ -1,0 +1,29 @@
+# Render Blueprint for the backend (Docker). Frontend goes on Vercel (see frontend/vercel.json).
+services:
+  - type: web
+    name: lyftr-chatbot-backend
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    plan: free
+    envVars:
+      - key: LLM_API_KEYS
+        sync: false          # paste "key1,key2" in the Render dashboard
+      - key: LLM_MODEL
+        value: gemini/gemini-2.0-flash
+      - key: ALLOWED_ORIGINS
+        sync: false          # e.g. https://your-app.vercel.app
+      - key: ENABLE_FAILURE_SIMULATION
+        value: "true"
+      - key: DATABASE_URL
+        value: sqlite:////data/app.db
+      - key: CACHE_TYPE
+        value: disk
+      - key: CACHE_DIR
+        value: /data/llm-cache
+    # On a paid plan, uncomment to keep SQLite across deploys:
+    # disk:
+    #   name: chat-data
+    #   mountPath: /data
+    #   sizeGB: 1
