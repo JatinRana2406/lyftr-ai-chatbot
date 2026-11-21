@@ -99,6 +99,13 @@ def create_app(
 
     # ---- endpoints ------------------------------------------------------------
 
+    @app.get("/")
+    async def root():
+        return {
+            "status": "ok",
+            "message": "Resilient LLM Chatbot Backend is running"
+        }
+
     @app.get("/health", response_model=HealthResponse)
     async def health(request: Request) -> Any:
         db: Database = request.app.state.db
