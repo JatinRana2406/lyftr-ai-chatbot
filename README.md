@@ -19,10 +19,10 @@ render.yaml         Render blueprint for the backend
 
 | Tier | URL |
 | --- | --- |
-| Frontend | `https://<your-frontend>.vercel.app` |
-| Backend | `https://<your-backend>.onrender.com` (try `/health`) |
-| Repository | `https://github.com/<you>/<repo>` |
-| Demo video | `<link>` |
+| Frontend | `https://lyftr-ai-chatbot-hagz.vercel.app/` |
+| Backend | `https://lyftr-ai-chatbot-e33z.onrender.com` (try `/health`) |
+| Repository | `https://github.com/JatinRana2406/lyftr-ai-chatbot` |
+| Demo video | `https://drive.google.com/file/d/1_6Rg2Lx6eLOnXc4jiknm--_ek__xsJW_/view?usp=drive_link` |
 
 **Deploying (≈10 minutes)**
 
