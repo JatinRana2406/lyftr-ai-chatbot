@@ -22,7 +22,7 @@ render.yaml         Render blueprint for the backend
 | Frontend | `https://lyftr-ai-chatbot-hagz.vercel.app/` |
 | Backend | `https://lyftr-ai-chatbot-e33z.onrender.com` (try `/health`) |
 | Repository | `https://github.com/JatinRana2406/lyftr-ai-chatbot` |
-| Demo video | `https://drive.google.com/file/d/1_6Rg2Lx6eLOnXc4jiknm--_ek__xsJW_/view?usp=drive_link` |
+| Demo video | `https://drive.google.com/file/d/1Sgf2vMs32LSThBkr1e7uSFzQgCtvxx7c/view?usp=drive_link` |
 
 **Deploying (≈10 minutes)**
 
